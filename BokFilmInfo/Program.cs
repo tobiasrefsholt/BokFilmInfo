@@ -2,7 +2,8 @@
 
 using BokFilmInfo;
 
-Data.AddData();
+BookList.AddData();
+MovieList.AddData();
 
 while (true)
 {
@@ -16,22 +17,22 @@ while (true)
     {
         case ConsoleKey.D1:
         {
-            Console.WriteLine("Test");
+            BookList.NewBook();
             break;
         }
         case ConsoleKey.D2:
         {
-            Console.WriteLine("Test");
+            MovieList.NewMovie();
             break;
         }
         case ConsoleKey.D3:
         {
-            Data.ShowBooks();
+            BookList.ShowBooks();
             break;
         }
         case ConsoleKey.D4:
         {
-            Console.WriteLine("Test");
+            MovieList.ShowMovies();
             break;
         }
         default:

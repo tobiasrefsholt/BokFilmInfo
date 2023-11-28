@@ -17,15 +17,17 @@ public class Book
 
     public void ShowDetails()
     {
+        Console.Clear();
         Console.WriteLine(_title);
         Console.WriteLine(_description);
         Console.WriteLine(_author);
         Console.WriteLine(_year);
         Console.WriteLine();
+        Console.ReadKey();
     }
 
     public void Show(int index)
     {
-        Console.WriteLine($"({index}) {_title} - {_author} - {_year}");
+        Console.WriteLine($"({index + 1}) {_title} - {_author} - {_year}");
     }
 }
