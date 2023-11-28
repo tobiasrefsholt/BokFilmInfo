@@ -34,6 +34,11 @@ while (true)
             Console.WriteLine("Test");
             break;
         }
+        default:
+            Console.Clear();
+            Console.WriteLine("Ugyldig input!");
+            Console.ReadKey();
+            break;
     }
     Console.WriteLine(input);
 }
